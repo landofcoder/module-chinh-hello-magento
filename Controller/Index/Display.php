@@ -13,5 +13,8 @@ class Display extends \Magento\Framework\App\Action\Action
 	public function execute()
 	{
 		return $this->_pageFactory->create();
+		$this->resultPage = $this->resultPageFactory->create();  
+  		$this->resultPage->getConfig()->getTitle()->set((__('Welcome to Codesspires')));
+  		return $this->resultPage;
 	}
 }
