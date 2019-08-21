@@ -3,4 +3,7 @@
     <referenceContainer name="content">
         <block class="Lof\ChinhHelloMagento\Block\Display" name="chinhhellomagento_display" template="Lof_ChinhHelloMagento::sayhello.phtml" />
     </referenceContainer>
+    <head>
+        <title>HelloMagento</title>
+    </head>
 </page>

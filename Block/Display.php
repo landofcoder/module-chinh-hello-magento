@@ -8,6 +8,11 @@ class Display extends \Magento\Framework\View\Element\Template
 	}
 	public function sayHello()
 	{
-		return __('<H1>Chinh Hello Magento</H1>');
+        return __('<H1>Chinh Hello Magento</H1>
+        <style>
+        H1{
+            color: red;
+        }
+        </style>');
 	}
 }
