@@ -17,10 +17,16 @@
                 </field>
                 <field id="display_text" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Display Text</label>
+                    <depends>
+                        <field id="enable">1</field>
+                    </depends>
                     <comment>This text will display on the frontend.</comment>
                 </field>
                 <field id="title_text" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Title Text</label>
+                    <depends>
+                        <field id="enable">1</field>
+                    </depends>
                     <comment>Text will display on title.</comment>
                 </field>
             </group>

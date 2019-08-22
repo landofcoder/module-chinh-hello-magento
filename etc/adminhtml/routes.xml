@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
-    <router id="standard">
+    <!--Use router 'admin' for admin route -->
+    <router id="admin">
+        <!--Define a custom route with id and frontName -->
         <route id="chinhhellomagento" frontName="chinhhellomagento">
-            <module name="Lof_ChinhHelloMagento" />
-        </route>
-        <route id="customer">
-           <module name="Lof_ChinhHelloMagento" before="Magento_Customer" />
+            <!--The module which this route match to-->
+            <module name="Lof_ChinhHelloMagento"/>
         </route>
     </router>
 </config>
