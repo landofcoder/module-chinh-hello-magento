@@ -34,6 +34,10 @@ class Data extends AbstractHelper
 	public function getConfigEnable()
     {
         return $this->scopeConfig->getValue('helloworld/general/enable',\Magento\Store\Model\ScopeInterface::SCOPE_STORE);
+	}
+	public function getConfigUrlText()
+    {
+        return $this->scopeConfig->getValue('helloworld/general/url_text',\Magento\Store\Model\ScopeInterface::SCOPE_STORE);
     }
 	public function getGeneralConfig($code, $storeId = null)
 	{
