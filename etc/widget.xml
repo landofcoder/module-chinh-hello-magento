@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+	<widget class="Lof\ChinhHelloMagento\Block\Widget\Posts" id="lof_chinhhellomagento_posts">
+		<label>ChinhMagento</label>
+		<description>Posts</description>
+		<parameters>
+            <parameter name="widgettitle" sort_order="10" visible="true" xsi:type="text">
+                <label>Title</label>
+            </parameter>
+            <parameter name="widgetcontent" sort_order="20" visible="true" xsi:type="text">
+                <label>Content</label>
+            </parameter>
+            <parameter name="widgetenable" sort_order="30" visible="true" xsi:type="select" source_model="Magento\Config\Model\Config\Source\Yesno">
+                <label>Enable Author</label>
+            </parameter>
+            <parameter name="widgetauthor" sort_order="40" visible="true" xsi:type="text">
+                <label>Content</label>
+                <depends>
+                    <parameter name="widgetenable" value="1" />
+                </depends>
+            </parameter>
+        </parameters>
+	</widget>
+</widgets>
